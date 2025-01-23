@@ -6,7 +6,7 @@
 	let isMouseEntered = $state(false);
 </script>
 
-<CardContainer bind:isMouseEntered className="inter-var z-50">
+<CardContainer bind:isMouseEntered>
 	<CardBody
 		className="relative flex max-h-[317px] items-center justify-center sm:max-h-[520px] md:max-h-[640px] lg:max-h-[795.22px] lg:w-[940px]"
 	>

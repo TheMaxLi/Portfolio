@@ -12,7 +12,7 @@
 	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game
 </div>
 <div
-	class="pointer-events-none absolute right-[0px] top-[10%] hidden w-[368px] select-none font-YoungSerif text-[65px] font-normal text-white blur lg:block"
+	class="pointer-events-none absolute right-[-60px] top-[10%] hidden w-[368px] select-none font-YoungSerif text-[65px] font-normal text-white blur lg:block"
 >
 	Max Li
 	<br />

@@ -27,6 +27,9 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
-		"@tailwindcss/typography": "^0.5.15"
+		"@tailwindcss/typography": "^0.5.15",
+		"clsx": "^2.1.1",
+		"svelte-motion": "^0.12.2",
+		"tailwind-merge": "^2.6.0"
 	}
 }

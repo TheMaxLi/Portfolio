@@ -5,7 +5,14 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				YoungSerif: ['YoungSerif', 'YoungSerif']
+			},
+			dropShadow: {
+				tight: '6px 8px 2px rgba(0, 0, 0, 0.25)'
+			}
+		}
 	},
 
 	plugins: [typography]

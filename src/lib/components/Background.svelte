@@ -1,5 +1,5 @@
 <div
-	class="pointer-events-none absolute left-[66px] top-[2%] w-[calc(100%-66%)] select-none font-YoungSerif text-[80px] font-normal text-white blur-sm"
+	class="pointer-events-none absolute left-[66px] top-[2%] hidden w-[calc(100%-66%)] select-none font-YoungSerif text-[65px] font-normal text-white blur-sm lg:block"
 >
 	&nbsp;&nbsp;&nbsp;&nbsp;[0]
 	<br />&nbsp;&nbsp;Harmony
@@ -12,7 +12,7 @@
 	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game
 </div>
 <div
-	class="pointer-events-none absolute right-[0px] top-[10%] w-[368px] select-none font-YoungSerif text-[80px] font-normal text-white blur"
+	class="pointer-events-none absolute right-[0px] top-[10%] hidden w-[368px] select-none font-YoungSerif text-[65px] font-normal text-white blur lg:block"
 >
 	Max Li
 	<br />

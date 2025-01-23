@@ -31,6 +31,7 @@
 	class={cn('flex items-center justify-center py-20', containerClassName)}
 	style="perspective: 1000px;"
 >
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
 	<div
 		bind:this={containerRef}
 		on:mouseenter={handleMouseEnter}

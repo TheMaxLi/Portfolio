@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
 
-	const props: { title: HTMLParagraphElement; href?: string; className: string } = $props();
+	const props: { title: string; href?: string; className: string } = $props();
 </script>
 
 <a

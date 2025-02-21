@@ -9,12 +9,12 @@
 
 <CardContainer bind:isMouseEntered>
 	<CardBody
-		className="relative  flex max-h-[317px] w-[374.34px] items-center justify-center sm:max-h-[520px] sm:w-[614.06px] md:max-h-[640px] md:w-[755.77px] lg:max-h-[795.22px] lg:w-[800px]"
+		className="relative flex max-h-[317px] w-[374.34px] items-center justify-center sm:max-h-[520px] sm:w-[614.06px] md:max-h-[640px] md:w-[755.77px] lg:max-h-[795.22px] lg:w-[800px]"
 	>
 		<CardItem {isMouseEntered} translateZ="70">
 			<img
 				src="CD_CASE.png"
-				class="pointer-events-none max-h-[317px] select-none sm:max-h-[520px] md:max-h-[640px] lg:max-h-[795.22px]"
+				class="pointer-events-none max-h-[317px] select-none sm:max-h-[520px] md:max-h-[640px] lg:max-h-[800px]"
 				alt="cd case"
 			/>
 		</CardItem>

@@ -34,9 +34,13 @@
 		>
 			<CardItem {isMouseEntered} translateZ="120">
 				<div class="absolute drop-shadow-tight sm:text-[150%] md:text-[180%] lg:text-[220%]">
-					<ProjectLink className="pr-5" title="&nbsp;&nbsp;&nbsp;&nbsp;[O] Harmony </br>" href="" />
-					<ProjectLink className="pr-3" title="&nbsp;&nbsp;[1] Circles </br>" href="" />
-					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="" />
+					<ProjectLink
+						className="pr-5"
+						title="&nbsp;&nbsp;&nbsp;&nbsp;[O] Harmony </br>"
+						href="#Harmony"
+					/>
+					<ProjectLink className="pr-3" title="&nbsp;&nbsp;[1] Circles </br>" href="#Circles" />
+					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />
 					<ProjectLink
 						href=""
 						className="pr-2 sm:pr-3"

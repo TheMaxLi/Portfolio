@@ -3,32 +3,29 @@
 	import CdDiskBack from '$lib/components/CdDiskBack.svelte';
 	import Iphone15Pro from '$lib/components/Iphone15Pro.svelte';
 	import { isFlippedState } from '$lib/utils/isFlipped.svelte';
+	import ProjectSection from './ProjectSection.svelte';
 </script>
 
 <!-- <Background /> -->
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<div>
+
+<div class="relative flex h-screen select-none items-center justify-center overflow-hidden">
 	<div
-		class="relative flex h-screen w-screen select-none items-center justify-center overflow-hidden bg-[#121212]"
+		class="flip-container"
+		onclick={() => (isFlippedState.isFlipped = !isFlippedState.isFlipped)}
 	>
-		<div
-			class="flip-container"
-			onclick={() => (isFlippedState.isFlipped = !isFlippedState.isFlipped)}
-		>
-			<div class="flip-inner" class:flipped={isFlippedState.isFlipped}>
-				<div class="flip-front">
-					<CdDisk />
-				</div>
-				<div class="flip-back">
-					<CdDiskBack />
-				</div>
+		<div class="flip-inner" class:flipped={isFlippedState.isFlipped}>
+			<div class="flip-front">
+				<CdDisk />
+			</div>
+			<div class="flip-back">
+				<CdDiskBack />
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class=""><Iphone15Pro /></div> -->
 </div>
+<ProjectSection />
 
 <style>
 	.flip-container {

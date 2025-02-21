@@ -1,12 +1,13 @@
 <script lang="ts">
-	import Background from '$lib/components/Background.svelte';
 	import CdDisk from '$lib/components/CdDisk.svelte';
 	import CdDiskBack from '$lib/components/CdDiskBack.svelte';
 	import { isFlippedState } from '$lib/utils/isFlipped.svelte';
 </script>
 
-<Background />
-<div class="flip-container">
+<!-- <Background /> -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div class="flip-container" onclick={() => (isFlippedState.isFlipped = !isFlippedState.isFlipped)}>
 	<div class="flip-inner" class:flipped={isFlippedState.isFlipped}>
 		<div class="flip-front">
 			<CdDisk />
@@ -16,8 +17,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- <CdDisk /> -->
 
 <style>
 	.flip-container {

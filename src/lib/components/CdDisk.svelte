@@ -21,42 +21,25 @@
 		<div class="absolute left-[32%] top-[10%] w-full sm:left-[34%] md:left-[35.5%] lg:left-[34%]">
 			<CardItem {isMouseEntered} translateZ="120">
 				<div
-					class="pointer-events-none absolute select-none text-center font-YoungSerif font-normal text-white blur-[4px] sm:text-[150%] md:text-[170%] lg:text-[190%]"
-				>
-					Max Li<br />Full Stack Developer
-				</div>
-				<div
-					class="absolute text-center font-YoungSerif font-normal text-white drop-shadow-tight sm:text-[150%] md:text-[170%] lg:text-[190%]"
+					class="absolute text-center font-YoungSerif font-normal text-[#CFD1CF] drop-shadow-tight [text-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)] sm:text-[150%] md:text-[170%] lg:text-[190%]"
 				>
 					Max Li<br />Full Stack Developer
 				</div>
 			</CardItem>
 		</div>
 		<div
-			class="absolute left-[16%] top-[32%] w-[150px] sm:left-[16%] sm:w-[250px] md:left-[16%] md:w-[300px] lg:left-[125px] lg:top-[33%] lg:w-[348px]"
+			class="absolute left-[16%] top-[32%] w-[150px] sm:w-[250px] md:w-[300px] lg:top-[33%] lg:w-[348px]"
 		>
 			<CardItem {isMouseEntered} translateZ="120">
-				<div
-					class="pointer-events-none absolute w-fit select-none font-YoungSerif font-normal text-white blur-[4px] sm:text-[150%] md:text-[180%] lg:text-[200%]"
-				>
-					<p>&nbsp;&nbsp;&nbsp;[0] Harmony</p>
-					<p>&nbsp;[1] Circles</p>
-					<p>[2] Mina Bites</p>
-					<p>
-						&nbsp;[3] Rhythm
-						<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game
-					</p>
-				</div>
-				<div
-					class="absolute font-YoungSerif font-normal text-white drop-shadow-tight sm:text-[150%] md:text-[180%] lg:text-[200%]"
-				>
-					<ProjectLink className="pr-5" title="&nbsp;&nbsp;&nbsp;[0] Harmony </br>" />
-					<ProjectLink className="pr-3" title="&nbsp;[1] Circles </br>" />
-					<ProjectLink className="px-1" title="[2] Mina Bites </br>" />
+				<div class="absolute drop-shadow-tight sm:text-[150%] md:text-[180%] lg:text-[200%]">
+					<ProjectLink className="pr-5" title="&nbsp;&nbsp;&nbsp;[0] Harmony </br>" href="" />
+					<ProjectLink className="pr-3" title="&nbsp;[1] Circles </br>" href="" />
+					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="" />
 					<ProjectLink
+						href=""
 						className="pr-2 sm:pr-3"
 						title="&nbsp;[3] Rhythm </br>
-						 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game"
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game"
 					/>
 				</div>
 			</CardItem>

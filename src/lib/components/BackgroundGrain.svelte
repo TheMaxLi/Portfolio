@@ -3,7 +3,7 @@
 <style>
 	.background {
 		background: url('/src/lib/images/NOISE.gif');
-		z-index: -1;
+		z-index: 20;
 		opacity: 0.06;
 		-webkit-text-fill-color: inherit;
 		background-color: #0000;
@@ -12,5 +12,6 @@
 		background-clip: border-box;
 		position: fixed;
 		inset: 0%;
+		pointer-events: none;
 	}
 </style>

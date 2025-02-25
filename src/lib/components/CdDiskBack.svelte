@@ -1,9 +1,16 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import CardBody from './ThreeDCardEffect/CardBody.svelte';
 	import CardContainer from './ThreeDCardEffect/CardContainer.svelte';
 	import CardItem from './ThreeDCardEffect/CardItem.svelte';
 
 	let isMouseEntered = $state(false);
+
+	function handleNavigate(event: Event) {
+		event.preventDefault();
+		event.stopPropagation();
+		goto('about');
+	}
 </script>
 
 <CardContainer bind:isMouseEntered>
@@ -41,6 +48,7 @@
 						class="w-full origin-top-left rotate-[3.0deg] hover:[box-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
 					/> -->
 					<button
+						onclick={handleNavigate}
 						class="w-full origin-top-left rotate-[3.0deg] rounded-lg border-2 hover:[box-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
 					>
 						<div

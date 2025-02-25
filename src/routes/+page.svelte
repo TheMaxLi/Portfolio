@@ -3,6 +3,9 @@
 	import CdDiskBack from '$lib/components/CdDiskBack.svelte';
 	import { isFlippedState } from '$lib/utils/isFlipped.svelte';
 	import ProjectSection from './ProjectSection.svelte';
+
+	// Should we keep global state or page state? IDK lollllllllllllll
+	let isFlipped = $state(false);
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->

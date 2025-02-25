@@ -7,6 +7,9 @@
 		event.preventDefault();
 		event.stopPropagation();
 		const anchor = document.querySelector(href) as HTMLElement;
+		if (!anchor) {
+			console.log('no ');
+		}
 		window.scrollTo({
 			top: anchor?.offsetTop,
 			behavior: 'smooth'

@@ -11,9 +11,14 @@
 	} = $props();
 </script>
 
-<div class="flex w-full gap-24 py-[100px] {reverse ? 'flex-row-reverse' : ''}" id={title}>
+<div
+	class="flex w-full flex-col gap-8 py-[100px] lg:flex-row lg:gap-24 {reverse
+		? 'lg:flex-row-reverse'
+		: ''} "
+	id={title}
+>
 	<ProjectImageWrapper>
-		<img {src} {alt} class="h-[600px] w-[824px]" />
+		<img {src} {alt} class="h-full max-h-[600px] w-full max-w-[824px]" />
 	</ProjectImageWrapper>
 	<div class="flex max-w-96 flex-col gap-5 text-[#CFD1CF]">
 		<h1 class="font-YoungSerif text-5xl [text-shadow:_0px_0px_10px_rgb(255_255_255_/_0.60)]">

@@ -37,11 +37,11 @@
 				</div>
 			</CardItem>
 		</div>
-		<div
-			class="absolute left-[19%] top-[32%] w-[150px] sm:w-[250px] md:w-[300px] lg:top-[38%] lg:w-[624px]"
-		>
+		<div class="absolute left-[19%] top-[38%] w-[150px] sm:w-[250px] md:w-[300px] lg:w-[624px]">
 			<CardItem {isMouseEntered} translateZ="120">
-				<div class="h-[281px] w-[450px]">
+				<div
+					class="h-[200px] w-[200px] sm:w-[350px] md:h-[250px] md:w-[400px] lg:h-[281px] lg:w-[450px]"
+				>
 					<!-- <img
 						src="PaperWithTape.png"
 						alt=""
@@ -52,7 +52,7 @@
 						class="w-full origin-top-left rotate-[3.0deg] rounded-lg border-2 hover:[box-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
 					>
 						<div
-							class=" font-YoungSerif text-[40px] font-normal text-[#CFD1CF] [text-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
+							class=" font-YoungSerif text-[20px] font-normal text-[#CFD1CF] [text-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)] sm:text-[30px] md:text-[35px] lg:text-[40px]"
 						>
 							LEARN MORE ABOUT ME
 						</div>

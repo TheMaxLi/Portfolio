@@ -29,7 +29,7 @@
 	];
 </script>
 
-<div class="mx-[15px] flex flex-col lg:mx-[100px]">
+<div class="mx-[15px] flex flex-col max-sm:gap-[200px] lg:mx-[100px]">
 	{#each PROJECTS as project}
 		<Project {...project} />
 	{/each}

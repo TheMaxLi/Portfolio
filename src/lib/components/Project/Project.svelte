@@ -12,12 +12,12 @@
 </script>
 
 <div
-	class="flex w-full flex-col gap-8 py-[100px] lg:flex-row lg:gap-24 {reverse
+	class="flex w-full flex-col gap-8 pt-[50px] last:pb-[250px] md:pb-[100px] md:pt-[100px] lg:flex-row lg:gap-24 {reverse
 		? 'lg:flex-row-reverse'
 		: ''} "
 	id={title}
 >
-	<ProjectImageWrapper>
+	<ProjectImageWrapper src={`project/${title.toLowerCase()}`}>
 		<img {src} {alt} class="h-full max-h-[600px] w-full max-w-[824px]" />
 	</ProjectImageWrapper>
 	<div class="flex max-w-96 flex-col gap-5 text-[#CFD1CF]">

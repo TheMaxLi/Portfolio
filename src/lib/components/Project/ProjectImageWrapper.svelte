@@ -1,14 +1,19 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import PlusIcon from './PlusIcon.svelte';
-	let { children } = $props();
+	let { children, src } = $props();
 
 	let isMouseEntered = $state(false);
+	function handleNavigate() {
+		goto(src);
+	}
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <button
 	onmouseenter={() => (isMouseEntered = true)}
 	onmouseleave={() => (isMouseEntered = false)}
+	onclick={handleNavigate}
 	class="relative flex flex-col border border-black/[0.2] p-4 dark:border-white/[0.2]"
 >
 	<PlusIcon class="absolute -left-3 -top-3 h-6 w-6 text-black dark:text-white" />

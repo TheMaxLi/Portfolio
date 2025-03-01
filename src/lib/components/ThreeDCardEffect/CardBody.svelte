@@ -6,7 +6,7 @@
 
 <div
 	class={cn(
-		'h-full w-full [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]',
+		'h-full w-full md:[transform-style:preserve-3d]  md:[&>*]:[transform-style:preserve-3d]',
 		className
 	)}
 >

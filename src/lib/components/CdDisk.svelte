@@ -38,13 +38,15 @@
 						href="#Harmony"
 					/>
 					<ProjectLink className="pr-3" title="&nbsp;&nbsp;[1] Circles </br>" href="#Circles" />
-					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />
+					<ProjectLink className="px-1" title="More to come..." href="#Mina-Bite" />
+
+					<!-- <ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />
 					<ProjectLink
 						href="None"
 						className="pr-2 sm:pr-3"
 						title="&nbsp;&nbsp;[3] Rhythm </br>
 					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game"
-					/>
+					/> -->
 				</div>
 			</CardItem>
 		</div>

@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="flex w-full flex-col gap-8 pt-[50px] last:pb-[250px] md:pb-[100px] md:pt-[100px] lg:flex-row lg:gap-24 {reverse
+	class="flex w-full flex-col gap-8 pt-[50px] last:pb-[200px] md:pb-[100px] md:pt-[100px] lg:flex-row lg:gap-24 {reverse
 		? 'lg:flex-row-reverse'
 		: ''} "
 	id={title}

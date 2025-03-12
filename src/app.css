@@ -6,3 +6,21 @@
 	font-family: 'YoungSerif';
 	src: url('fonts/YoungSerif-Regular.ttf');
 }
+#style-3::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: transparent;
+}
+
+#style-3::-webkit-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+}
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #ffffff #ffffff00;
+}

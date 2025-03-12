@@ -2,7 +2,7 @@
 
 <style>
 	.background {
-		background: url('/src/lib/images/NOISE.gif');
+		background: url('/NOISE.gif');
 		z-index: 20;
 		opacity: 0.06;
 		-webkit-text-fill-color: inherit;

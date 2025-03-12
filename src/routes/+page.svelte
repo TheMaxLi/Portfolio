@@ -2,6 +2,7 @@
 	import CdDisk from '$lib/components/CdDisk.svelte';
 	import CdDiskBack from '$lib/components/CdDiskBack.svelte';
 	import { isFlippedState } from '$lib/utils/isFlipped.svelte';
+	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
 	import ProjectSection from './ProjectSection.svelte';
 
 	// Should we keep global state or page state? IDK lollllllllllllll
@@ -16,6 +17,8 @@
 	<div
 		class="flip-container"
 		onclick={() => (isFlippedState.isFlipped = !isFlippedState.isFlipped)}
+		onmouseenter={() => showTooltip('Click me to flip me!!')}
+		onmouseleave={() => hideTooltip()}
 	>
 		<div class="flip-inner" class:flipped={isFlippedState.isFlipped}>
 			<div class="flip-front top-[-200px] sm:top-[-300px] md:top-[-400px]">

@@ -5,7 +5,7 @@
 		{
 			title: 'Harmony',
 			desc: 'A collaborative caretaking app designed to streamline caregiving tasks like journaling, medication reminders, and appointment tracking. Built with Solid.js, React, and Claude AI for task automation, reducing user effort by 70%. Features include a dynamic calendar, real-time notifications, and a centralized dashboard for caregivers.',
-			src: '/Harmony.png',
+			src: '/Harmony/Harmony.png',
 			reverse: false,
 			link: 'https://solid-app.fly.dev/',
 			alt: 'Screenshots of Harmony app'

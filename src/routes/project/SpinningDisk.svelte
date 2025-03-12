@@ -1,20 +1,42 @@
 <script lang="ts">
-	import { fade, slide, fly } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 
 	let { isFullscreen = $bindable<boolean>(), isPlaying = $bindable<boolean>() } = $props();
 </script>
 
 {#if !isFullscreen}
-	<div class="flex items-center justify-center bg-gray-900 p-6 md:w-1/3" transition:slide>
+	<div
+		class="flex items-center justify-center p-6 max-md:hidden md:w-1/3"
+		transition:slide={{ axis: 'x' }}
+	>
 		<div class="relative h-56 w-56 md:h-full md:w-full">
 			<div
-				class="absolute flex h-full w-full items-center justify-center rounded-full bg-gray-900 shadow-lg
+				class="absolute flex h-full w-full items-center justify-center rounded-full
 					  {isPlaying ? 'animate-spin-slow' : ''}"
 			>
-				<div class=" overflow-hidden rounded-full">
-					<img alt="CD" src="/src/lib/images/CD.png" />
+				<div class=" overflow-hidden rounded-full shadow-lg">
+					<img alt="CD" src="/CD.png" class="pointer-events-none" />
 				</div>
 			</div>
 		</div>
 	</div>
 {/if}
+
+<style>
+	:global(.animate-spin-slow) {
+		animation: spin 8s linear infinite;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	:global(.transform.-rotate-30) {
+		transform: rotate(-30deg);
+	}
+</style>

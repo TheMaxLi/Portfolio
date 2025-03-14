@@ -49,7 +49,7 @@
 		</button>
 	</div>
 
-	<div class="flex flex-1 flex-col overflow-hidden md:flex-row">
+	<div class="flex flex-col overflow-hidden md:flex-row">
 		<SpinningDisk bind:isFullscreen bind:isPlaying />
 
 		{@render children()}

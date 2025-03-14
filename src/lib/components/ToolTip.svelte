@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { Spring } from 'svelte/motion';
 	import { fade } from 'svelte/transition';
-	import { tooltipState } from '$lib/utils/tooltip.svelte';
+	import { hideTooltip, tooltipState } from '$lib/utils/tooltip.svelte';
+	import { page } from '$app/state';
 
 	let tooltipPosition = $state({
 		x: 0,
@@ -15,6 +16,14 @@
 			damping: 0.25
 		}
 	);
+
+	let currentPath = $state('');
+	$effect(() => {
+		if (page && page.url.pathname !== currentPath) {
+			currentPath = page.url.pathname;
+			hideTooltip();
+		}
+	});
 
 	function handleMouseMove(event: MouseEvent) {
 		if (tooltipState.isVisible) {
@@ -32,7 +41,10 @@
 
 	$effect(() => {
 		window.addEventListener('mousemove', handleMouseMove);
-		return () => window.removeEventListener('mousemove', handleMouseMove);
+
+		return () => {
+			window.removeEventListener('mousemove', handleMouseMove);
+		};
 	});
 </script>
 

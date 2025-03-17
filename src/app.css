@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-	font-family: 'YoungSerif', 'Courier New', Courier, monospace;
+	font-family: 'YoungSerif';
 	src: url('fonts/YoungSerif-Regular.ttf');
 }
 #style-3::-webkit-scrollbar-track {

@@ -50,7 +50,7 @@
 
 {#if tooltipState.isVisible}
 	<div
-		class="pointer-events-none fixed z-[9999] max-w-[250px] rounded-md bg-black px-[10px] py-[6px] text-[14px] text-[white] shadow"
+		class="pointer-events-none fixed z-[9999] max-w-[250px] rounded-md bg-black px-[10px] py-[6px] text-[14px] text-[white] shadow max-lg:hidden"
 		style="left: {tooltipPosition.x}px; top: {tooltipPosition.y}px;"
 		transition:fade={{ duration: 150 }}
 	>

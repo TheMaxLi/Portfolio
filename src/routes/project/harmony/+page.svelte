@@ -55,10 +55,10 @@
 				<div class="space-y-5">
 					<h2 class="font-YoungSerif text-2xl text-white">AI-Assisted Caregiving Application</h2>
 					<p>
-						Harmony is a comprehensive caregiving platform designed to streamline and enhance the
-						coordination of care for individuals. Using AI assistance, the application helps
-						caregivers track health information, record appointments, and maintain detailed care
-						journals—all within a collaborative team environment.
+						Harmony is a comprehensive caregiving platform designed to streamline the coordination
+						of care for individuals. Using AI assistance, the application helps caregivers track
+						health information, record appointments, and maintain detailed care journals—all within
+						a collaborative team environment.
 					</p>
 				</div>
 				<!-- <img
@@ -68,33 +68,51 @@
 				/> -->
 			</div>
 
-			<div class="space-y-8">
-				<div class="space-y-4">
-					<h3 class="font-YoungSerif text-2xl text-white">My Role & Contributions</h3>
+			<div class="flex items-center space-x-40">
+				<div class="space-y-5">
+					<h2 class="font-YoungSerif text-2xl text-white">Development Process</h2>
 					<p>
-						As a full-stack developer on the Harmony team, I had primary responsibility for the
-						calendar system—a core feature that serves as the central hub for care coordination. My
-						work integrated with the journaling system to create a comprehensive care timeline. I
-						also actively wrote meeting minutes for every team meeting, ensuring clear communication
-						and accountability throughout the project.
+						When approaching the calendar implementation, I began by analyzing the designer's
+						mockups and identifying the technical requirements needed to bring their vision to life.
+						I worked closely with the design team to understand the intended user experience across
+						the day, week, and month views. From there, I established the data structures and API
+						endpoints necessary to support the calendar functionality.
+					</p>
+					<p>
+						The journal-calendar integration concept came from team discussions about enhancing the
+						app's usefulness. While I didn't design the interface, I proposed the technical approach
+						for connecting these two features and implemented the bidirectional data flow needed to
+						make this integration work seamlessly.
 					</p>
 				</div>
+				<!-- <img
+					src="/Harmony/Home.png"
+					alt="Harmony Dashboard"
+					class="max-h-[400px] rounded-lg shadow-lg"
+				/> -->
+			</div>
+
+			<div class="space-y-16">
 				<div class="flex items-center justify-between max-md:flex-col max-md:space-x-0 max-md:pr-0">
 					<div class="space-y-4">
-						<h4 class="font-YoungSerif text-xl text-white">Custom Calendar Implementation</h4>
-						<p>I built a custom calendar component from scratch, providing three distinct views:</p>
+						<h4 class="font-YoungSerif text-2xl text-white">Custom Calendar Implementation</h4>
+						<p>
+							The calendar system serves as the central coordination tool within Harmony. Users can
+							toggle between day, week, and month views to plan and track caregiving activities at
+							different levels of detail.
+						</p>
 						<ul class="mt-3 list-disc space-y-2 pl-5">
 							<li>
-								Month View: Provides an overview of all care events and journal entries across a
-								monthly timespan with color-coded categorization
+								Day view: Shows an hourly scheduling layout, including event positioning, and
+								overlap handling.
 							</li>
 							<li>
 								Week View: Offers a more detailed breakdown of scheduled appointments within a 7-day
 								period with time-block visualization
 							</li>
 							<li>
-								Day View: Presents a granular timeline of all care-related events for specific days
-								with hourly precision
+								Month View: Provides an overview of all care events and journal entries across a
+								monthly timespan with color-coded categorization.
 							</li>
 						</ul>
 					</div>
@@ -108,10 +126,10 @@
 				</div>
 
 				<div class="space-y-4">
-					<h4 class="font-YoungSerif text-xl text-white">Journal-Calendar Integration</h4>
+					<h4 class="font-YoungSerif text-2xl text-white">Journal-Calendar Integration</h4>
 					<p>
-						One of my key innovations was bridging the application's journaling and scheduling
-						components:
+						The journal-calendar integration concept came from team discussions about representing
+						the connection between care observations and scheduled events.
 					</p>
 					<ul class="mt-3 list-disc space-y-2 pl-5">
 						<li>Implemented a system to display journal entries directly within calendar views</li>
@@ -123,8 +141,11 @@
 				</div>
 
 				<div class="space-y-4">
-					<h4 class="font-YoungSerif text-xl text-white">Real-Time Notifications System</h4>
-					<p>I implemented a comprehensive WebSocket-based notification system:</p>
+					<h4 class="font-YoungSerif text-2xl text-white">Real-Time Notifications System</h4>
+					<p>
+						The notification system ensures that all team members stay informed about critical
+						updates without requiring manual checks.
+					</p>
 					<ul class="mt-3 list-disc space-y-2 pl-5">
 						<li>Created real-time pop-up notifications for calendar events and journal entries</li>
 						<li>
@@ -135,20 +156,7 @@
 				</div>
 
 				<div class="space-y-4">
-					<h4 class="font-YoungSerif text-xl text-white">Technical Implementation</h4>
-					<p>I wrote both frontend and backend code for these features:</p>
-					<ul class="mt-3 list-disc space-y-2 pl-5">
-						<li>Frontend: Created responsive calendar interfaces with SolidJS</li>
-						<li>Backend: Developed RESTful APIs for event creation, retrieval, and deletion</li>
-						<li>Database: Designed schema for storing events and assignment relationships</li>
-						<li>
-							WebSockets: Implemented Socket.io for real-time updates across all connected clients
-						</li>
-					</ul>
-				</div>
-
-				<div class="space-y-4">
-					<h4 class="font-YoungSerif text-xl text-white">Team Contributions</h4>
+					<h4 class="font-YoungSerif text-2xl text-white">Team Contributions</h4>
 					<p>Beyond my direct responsibilities, I actively participated in:</p>
 					<ul class="mt-3 list-disc space-y-2 pl-5">
 						<li>Technology stack evaluation and selection (SolidJS, Drizzle, SQLite)</li>
@@ -160,49 +168,31 @@
 			</div>
 
 			<div class="space-y-4">
-				<h4 class="font-YoungSerif text-2xl text-white">Challenges & Solutions</h4>
-				<p>The calendar feature presented several technical challenges:</p>
-
-				<div class="mt-4 space-y-6">
-					<div class="rounded-lg bg-zinc-800 p-4">
-						<h5 class="mb-2 font-YoungSerif text-lg text-white">
-							Building a Custom Calendar Component
-						</h5>
-						<p>
-							Challenge: Off-the-shelf calendar components lacked the customization needed for our
-							unique use case and didn't offer the visual event indicators we wanted.
-						</p>
-						<p class="mt-2">
-							Solution: I made the decision to build a custom calendar system from scratch rather
-							than using existing libraries. This gave me precise control over how the calendar
-							looked and functioned:
-						</p>
-						<ul class="mt-2 list-disc space-y-1 pl-5">
-							<li>
-								Created a visual indicator system with colored dots under each date, showing at a
-								glance which days had events
-							</li>
-							<li>
-								Designed the dots to reflect different types of entries - different colors for
-								different journal entry types and event categories
-							</li>
-							<li>
-								Implemented logic to display multiple dots when a date contained multiple entries
-							</li>
-						</ul>
-					</div>
-
-					<div class="rounded-lg bg-zinc-800 p-4">
-						<h5 class="mb-2 font-YoungSerif text-lg text-white">Data Synchronization</h5>
-						<p>Challenge: Ensuring all team members saw real-time updates without conflicts.</p>
-						<p class="mt-2">
-							Solution: Designed a WebSocket architecture with Socket.io to broadcast changes
-							instantly to all connected clients. Implemented optimistic UI updates combined with
-							server validation to maintain data integrity while providing a responsive user
-							experience.
-						</p>
-					</div>
-				</div>
+				<h4 class="font-YoungSerif text-2xl text-white">Conclusion and Reflection</h4>
+				<p>
+					Working on Harmony reinforced the importance of close collaboration between developers and
+					designers. While I didn't create the visual designs, my implementation work was crucial in
+					bringing those designs to life as functional, performant features.
+				</p>
+				<p>
+					If I were to approach this project again, I would advocate for earlier user testing to
+					identify potential issues earlier. Additionally, I would implement more comprehensive
+					automated testing from the beginning to ensure the features remained stable through
+					iterations.
+				</p>
+				<p>Given additional time, I would expand the calendar system to include:</p>
+				<ul class="mt-3 list-disc space-y-2 pl-5">
+					<li>Medication reminders</li>
+					<li>Advanced recurrence patterns for regularly scheduled care activities</li>
+					<li>AI-powered suggestions for optimizing care schedules based on historical patterns</li>
+					<li>Integration with external healthcare provider calendars</li>
+				</ul>
+				<p>
+					This project strengthened my skills in translating design specifications into functioning
+					code while maintaining performance and reliability. It also demonstrated my ability to
+					architect complex data relationships, like the journal-calendar integration, that enhance
+					the overall user experience.
+				</p>
 			</div>
 		</div>
 	</div>

@@ -28,7 +28,7 @@
 					<span>Timeline: {projectData.timeline}</span>
 				</div>
 
-				<!-- <div class="flex pb-5">
+				<div class="flex space-x-2 pb-5">
 					<button class="rounded-full bg-zinc-700 px-4 py-2 text-sm text-white">歌词</button>
 					<button class="rounded-full px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-700"
 						>百科</button
@@ -36,7 +36,7 @@
 					<button class="rounded-full px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-700"
 						>相似推荐</button
 					>
-				</div> -->
+				</div>
 			</div>
 			<div class="relative h-40 w-40 md:hidden">
 				<div

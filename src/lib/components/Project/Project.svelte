@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import ProjectImageWrapper from './ProjectImageWrapper.svelte';
 
 	let {
@@ -9,6 +10,12 @@
 		link = '',
 		alt = ''
 	} = $props();
+
+	function handleNavigate(event: Event, src: string) {
+		event.preventDefault();
+		event.stopPropagation();
+		goto(`project/${title.toLowerCase()}`);
+	}
 </script>
 
 <div
@@ -21,9 +28,11 @@
 		<img {src} {alt} class="h-full max-h-[600px] w-full max-w-[824px]" />
 	</ProjectImageWrapper>
 	<div class="flex max-w-96 flex-col gap-5 text-[#CFD1CF]">
-		<h1 class="font-YoungSerif text-5xl [text-shadow:_0px_0px_10px_rgb(255_255_255_/_0.60)]">
-			{title}
-		</h1>
+		<button onclick={(e) => handleNavigate(e, src)} class="flex justify-start">
+			<h1 class="font-YoungSerif text-5xl [text-shadow:_0px_0px_10px_rgb(255_255_255_/_0.60)]">
+				{title} →
+			</h1>
+		</button>
 		<p class="">{desc}</p>
 	</div>
 </div>

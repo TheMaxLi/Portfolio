@@ -15,7 +15,7 @@
 					  {isPlaying ? 'animate-spin-slow' : ''}"
 			>
 				<div class=" overflow-hidden rounded-full shadow-lg">
-					<img alt="CD" src="/CD.png" class="pointer-events-none" />
+					<img alt="CD" src="/CD.webp" class="pointer-events-none" />
 				</div>
 			</div>
 		</div>

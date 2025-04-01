@@ -5,7 +5,7 @@
 		{
 			title: 'Harmony',
 			desc: 'A collaborative caretaking app designed to streamline caregiving tasks like journaling, medication reminders, and appointment tracking. Built with Solid.js, React, and Claude AI for task automation, reducing user effort by 70%. Features include a dynamic calendar, real-time notifications, and a centralized dashboard for caregivers.',
-			src: '/Harmony/Harmony.png',
+			src: '/Harmony/Harmony.webp',
 			reverse: false,
 			link: 'https://solid-app.fly.dev/',
 			alt: 'Screenshots of Harmony app'
@@ -13,7 +13,7 @@
 		{
 			title: 'Circles',
 			desc: 'A social media platform for close friends to create groups, share photo albums, and collaborate in real-time. Built with vanilla JavaScript, Tailwind CSS, and WebSockets for notifications. Integrated Cloudinary and Multer for efficient photo storage and used Prisma + SQLite for database management. Hosted on Fly.io using Docker.',
-			src: '/CirclesLight.png',
+			src: '/CirclesLight.webp',
 			reverse: true,
 			link: 'https://idsp-2-circles.fly.dev/',
 			alt: 'Screenshots of Circles app'

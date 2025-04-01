@@ -27,7 +27,7 @@
 	<div class="mx-auto max-w-2xl">
 		<div class=" mb-12 flex rotate-3 transform justify-center">
 			<img
-				src="/me.png"
+				src="/me.webp"
 				alt="Me"
 				class="h-auto w-3/4 rounded-sm border border-gray-100 bg-white p-4 shadow-md"
 			/>

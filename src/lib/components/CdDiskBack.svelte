@@ -19,7 +19,7 @@
 	>
 		<CardItem {isMouseEntered} translateZ="70">
 			<img
-				src="CD_CASE_BACK.png"
+				src="CD_CASE_BACK.webp"
 				class="pointer-events-none max-h-[317px] select-none sm:max-h-[520px] md:max-h-[640px] lg:max-h-[800px]"
 				alt="cd case back"
 			/>
@@ -42,11 +42,6 @@
 				<div
 					class="h-[200px] w-[200px] sm:w-[350px] md:h-[250px] md:w-[400px] lg:h-[281px] lg:w-[450px]"
 				>
-					<!-- <img
-						src="PaperWithTape.png"
-						alt=""
-						class="w-full origin-top-left rotate-[3.0deg] hover:[box-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
-					/> -->
 					<button
 						onclick={handleNavigate}
 						class="w-full origin-top-left rotate-[3.0deg] rounded-lg border-2 hover:[box-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"

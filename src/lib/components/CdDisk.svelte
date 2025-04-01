@@ -13,7 +13,7 @@
 	>
 		<CardItem {isMouseEntered} translateZ="70">
 			<img
-				src="CD_CASE.png"
+				src="CD_CASE.webp"
 				class="pointer-events-none max-h-[317px] select-none sm:max-h-[520px] md:max-h-[640px] lg:max-h-[800px]"
 				alt="cd case"
 			/>
@@ -23,7 +23,7 @@
 				<div
 					class="absolute text-center font-YoungSerif font-normal text-[#CFD1CF] drop-shadow-tight [text-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)] sm:text-[150%] md:text-[170%] lg:text-[34px]"
 				>
-					Max Li<br />Full Stack Developer
+					Shuyu Li<br />Full Stack Developer
 				</div>
 			</CardItem>
 		</div>
@@ -36,8 +36,14 @@
 						className="pr-5"
 						title="&nbsp;&nbsp;&nbsp;&nbsp;[O] Harmony </br>"
 						href="#Harmony"
+						name="Harmony"
 					/>
-					<ProjectLink className="pr-3" title="&nbsp;&nbsp;[1] Circles </br>" href="#Circles" />
+					<ProjectLink
+						className="pr-3"
+						title="&nbsp;&nbsp;[1] Circles </br>"
+						href="#Circles"
+						name="Circle"
+					/>
 					<ProjectLink className="px-1" title="More to come..." href="#Mina-Bite" />
 
 					<!-- <ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />

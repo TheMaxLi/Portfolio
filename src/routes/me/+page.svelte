@@ -3,6 +3,7 @@
 	import handleAnchorClick from '$lib/utils/handleAnchorClick';
 	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
 	import Inspiration from './Inspiration.svelte';
+	import MyImage from './MyImage.svelte';
 
 	function exitAboutMe() {
 		goto('/');
@@ -29,13 +30,7 @@
 <main class="min-h-screen p-6 md:p-10">
 	<div class="mx-auto max-w-4xl pt-4">
 		<div class="mb-12 flex rotate-3 transform justify-center">
-			<img
-				onmouseenter={() => showTooltip(`Photo taken by joe__salmon <3`)}
-				onmouseleave={() => hideTooltip()}
-				src="/me2.webp"
-				alt="Me"
-				class="w-5/6 rounded-sm border border-gray-100 bg-white p-4 shadow-md"
-			/>
+			<MyImage />
 		</div>
 
 		<div class="space-y-6 pb-12">

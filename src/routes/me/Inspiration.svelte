@@ -27,15 +27,23 @@
 				<div
 					class="-translate-y-5 -rotate-3 transform rounded-lg bg-white/80 p-4 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
 				>
-					<img src="/Vivid-stasis.webp" alt="" class="mb-3 h-48 w-full rounded-md object-cover" />
+					<img
+						src="/Vivid-stasis.webp"
+						alt="marketing material for vivid stasis"
+						class="mb-3 h-48 w-full rounded-md object-cover"
+					/>
 					<p class="italic text-gray-700">Inspiration</p>
 				</div>
-				<!-- <div
+				<div
 					class="rotate-1 transform rounded-lg bg-white/80 p-4 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
 				>
-					<img src="" alt="" class="mb-3 h-48 w-full rounded-md object-cover" />
+					<img
+						src="/GoodbyeEri.png"
+						alt="panel of the manga goodbye eri"
+						class="mb-3 h-48 w-full rounded-md object-cover"
+					/>
 					<p class="italic text-gray-700">Inspiration</p>
-				</div> -->
+				</div>
 				<div
 					class="translate-y-8 -rotate-2 transform rounded-lg bg-white/80 p-4 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
 				>

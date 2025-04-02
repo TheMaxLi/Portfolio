@@ -10,7 +10,7 @@
 	function handleNavigate(event: Event) {
 		event.preventDefault();
 		event.stopPropagation();
-		goto('about');
+		goto('me');
 	}
 </script>
 

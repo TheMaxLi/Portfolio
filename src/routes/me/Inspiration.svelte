@@ -42,7 +42,7 @@
 					<iframe
 						width="320"
 						height="180"
-						src="//player.bilibili.com/player.html?isOutside=true&aid=113131971942950&bvid=BV1nRtceAE3T&cid=25850085491&p=1"
+						src="//player.bilibili.com/player.html?isOutside=true&aid=113131971942950&bvid=BV1nRtceAE3T&cid=25850085491&p=1&autoplay=0"
 						title="Bilibili video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

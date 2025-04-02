@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { showTooltip } from '$lib/utils/tooltip.svelte';
 	import CardBody from './ThreeDCardEffect/CardBody.svelte';
 	import CardContainer from './ThreeDCardEffect/CardContainer.svelte';
 	import CardItem from './ThreeDCardEffect/CardItem.svelte';
@@ -44,6 +45,8 @@
 				>
 					<button
 						onclick={handleNavigate}
+						onmouseenter={() => showTooltip(`Wait.. you want to learn more about me?!!`)}
+						onmouseleave={() => showTooltip('Click me to flip me!!')}
 						class="w-full origin-top-left rotate-[3.0deg] rounded-lg border-2 hover:[box-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
 					>
 						<div

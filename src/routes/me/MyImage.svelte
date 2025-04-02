@@ -9,7 +9,7 @@
 </script>
 
 <CardContainer bind:isMouseEntered containerClassName="py-0">
-	<CardBody className="relative flex items-center justify-center ">
+	<CardBody className="relative flex items-center justify-center">
 		<CardItem {isMouseEntered} className="flex justify-center" translateZ="30">
 			<img
 				onmouseenter={() => showTooltip(`Photo taken by joe__salmon <3`)}

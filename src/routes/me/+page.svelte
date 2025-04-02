@@ -33,13 +33,13 @@
 			<MyImage />
 		</div>
 
-		<div class="space-y-6 pb-12">
-			<h1 class="font-serif text-5xl leading-tight text-[#CFD1CF]">
+		<div class="space-y-6 pb-12 max-sm:pb-0">
+			<h1 class="font-serif text-5xl leading-tight text-[#CFD1CF] max-sm:text-4xl">
 				<span class="italic">I'm</span> passionate about pushing the boundaries of technology and
 				creativity to create <span class="font-light italic">unique</span> solutions.
 			</h1>
 
-			<div class="space-y-4 text-lg text-[#CFD1CF]">
+			<div class="space-y-4 text-lg text-[#CFD1CF] max-sm:text-base">
 				<p>
 					I’m Max Shuyu Li, a full-stack developer passionate about the raw, innovative sounds of
 					the underground Chinese music scene. I bring the same curiosity and excitement when

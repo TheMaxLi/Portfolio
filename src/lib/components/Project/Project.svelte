@@ -8,7 +8,8 @@
 		src = '',
 		reverse = false,
 		link = '',
-		alt = ''
+		alt = '',
+		id
 	} = $props();
 
 	function handleNavigate(event: Event, src: string) {
@@ -30,7 +31,9 @@
 	<div class="flex max-w-96 flex-col gap-5 text-[#CFD1CF]">
 		<button onclick={(e) => handleNavigate(e, src)} class="flex justify-start">
 			<h1 class="font-YoungSerif text-5xl [text-shadow:_0px_0px_10px_rgb(255_255_255_/_0.60)]">
-				{title} →
+				{!reverse ? '←' : ''}
+				{title}
+				{reverse ? '→' : ''}
 			</h1>
 		</button>
 		<p class="">{desc}</p>

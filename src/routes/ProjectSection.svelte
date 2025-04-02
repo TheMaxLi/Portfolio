@@ -29,8 +29,8 @@
 	];
 </script>
 
-<div class="mx-[15px] flex flex-col max-sm:gap-[200px] max-sm:pt-[50px] lg:mx-[100px]">
-	{#each PROJECTS as project}
-		<Project {...project} />
+<div class="mx-[15px] flex flex-col max-sm:gap-[200px] max-sm:pt-[50px] sm:mx-[50px] lg:mx-[100px]">
+	{#each PROJECTS as project, i}
+		<Project {...{ ...project, id: i }} />
 	{/each}
 </div>

@@ -1,18 +1,32 @@
 <script lang="ts">
 	import CdDisk from '$lib/components/CdDisk.svelte';
 	import CdDiskBack from '$lib/components/CdDiskBack.svelte';
+	import handleAnchorClick from '$lib/utils/handleAnchorClick';
 	import { isFlippedState } from '$lib/utils/isFlipped.svelte';
 	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
 	import ProjectSection from './ProjectSection.svelte';
 
 	// Should we keep global state or page state? IDK lollllllllllllll
 	let isFlipped = $state(false);
+
+	function handleKeyClick(e: KeyboardEvent) {
+		e.preventDefault();
+		switch (e.key) {
+			case '0':
+				handleAnchorClick(e, '#Harmony');
+				break;
+			case '1':
+				handleAnchorClick(e, '#Circles');
+				break;
+		}
+	}
 </script>
 
+<svelte:window onkeypress={handleKeyClick} />
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-	class="relative flex h-[600px] select-none items-center justify-center overflow-hidden md:h-screen lg:h-screen"
+	class="relative flex h-[500px] select-none items-center justify-center overflow-hidden pt-[50px] sm:overflow-visible md:h-[calc(100vh-100px)] md:pt-[0px]"
 >
 	<div
 		class="flip-container"
@@ -30,6 +44,13 @@
 		</div>
 	</div>
 </div>
+<p class="hidden w-full justify-center pb-[50px] text-xl text-white text-opacity-40 sm:flex">
+	P.S. Try hovering your mouse over the disk!
+</p>
+<p class=" text-md flex w-full justify-center pb-[50px] text-white text-opacity-40 sm:hidden">
+	P.S. Try clicking the disk!
+</p>
+
 <ProjectSection />
 
 <style>

@@ -1,21 +1,9 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
+	import handleAnchorClick from '$lib/utils/handleAnchorClick';
 	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
 
 	const props: { title: string; href: string; className: string; name?: string } = $props();
-
-	function handleAnchorClick(event: Event, href: string) {
-		event.preventDefault();
-		event.stopPropagation();
-		const anchor = document.querySelector(href) as HTMLElement;
-		if (!anchor) {
-			console.log('no anchors found');
-		}
-		window.scrollTo({
-			top: anchor?.offsetTop,
-			behavior: 'smooth'
-		});
-	}
 </script>
 
 <button

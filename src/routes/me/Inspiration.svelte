@@ -1,15 +1,15 @@
 <div
 	id="inspiration"
 	class="mx-auto flex w-full max-w-6xl flex-col items-center bg-[url(/notepad.webp)] pb-12 max-sm:bg-[url()] max-sm:pt-16"
-	style="background-size: cover;"
+	style="background-size: cover; opacity: 90%;"
 >
-	<div class="flex w-full flex-col pt-[50px] max-sm:pt-0">
+	<div class="flex w-full flex-col pt-[60px] max-sm:pt-0">
 		<p
-			class="translate-x-10 transform text-center font-serif text-6xl text-black text-opacity-80 max-sm:translate-x-0 max-sm:text-2xl max-sm:text-white"
+			class=" transform text-center font-serif text-6xl text-black text-opacity-80 max-sm:text-2xl max-sm:text-white"
 		>
 			Inspirations/Favs!!!
 		</p>
-		<div class="max-w-4xl p-6 pl-[53px] pt-20 max-sm:pt-5">
+		<div class="max-w-4xl p-6 pl-[110px] pt-16 max-sm:pt-5">
 			<div class="flex flex-col">
 				<div class="flex max-sm:flex-col">
 					<div

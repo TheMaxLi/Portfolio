@@ -33,9 +33,6 @@
 					<button class="rounded-full px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-700"
 						>百科</button
 					>
-					<button class="rounded-full px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-700"
-						>相似推荐</button
-					>
 				</div>
 			</div>
 			<div class="relative h-40 w-40 md:hidden">
@@ -55,10 +52,10 @@
 				<div class="space-y-5">
 					<h2 class="font-YoungSerif text-2xl text-white">AI-Assisted Caregiving Application</h2>
 					<p>
-						Harmony is a comprehensive caregiving platform designed to streamline the coordination
-						of care for individuals. Using AI assistance, the application helps caregivers track
-						health information, record appointments, and maintain detailed care journals—all within
-						a collaborative team environment.
+						Harmony is a comprehensive caregiving platform designed to streamline care coordination
+						for individuals. Using AI assistance, the application helps caregivers track health
+						information, record appointments, and maintain detailed care journals—all within a
+						collaborative team environment.
 					</p>
 				</div>
 				<!-- <img
@@ -97,8 +94,8 @@
 					<div class="space-y-4">
 						<h4 class="font-YoungSerif text-2xl text-white">Custom Calendar Implementation</h4>
 						<p>
-							The calendar system serves as the central coordination tool within Harmony. Users can
-							toggle between day, week, and month views to plan and track caregiving activities at
+							The calendar system serves as Harmony's central coordination tool. Users can toggle
+							between day, week, and month views to plan and track caregiving activities at
 							different levels of detail.
 						</p>
 						<ul class="mt-3 list-disc space-y-2 pl-5">

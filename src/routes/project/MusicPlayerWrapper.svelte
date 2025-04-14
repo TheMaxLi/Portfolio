@@ -42,17 +42,23 @@
 	}
 
 	$effect(() => {
-		document.addEventListener('keydown', (event) => {
-			if (event.key === 'Escape' && isFullscreen) {
+		document.addEventListener('keydown', (event: KeyboardEvent) => {
+			if (event.key === 'Escape') {
 				toggleFullscreen();
 			}
-			if (event.key === 'Escape' && isFullscreen) {
-				toggleFullscreen();
+			if (event.key === ' ') {
+				isPlaying = !isPlaying;
 			}
-			if (event.key === 'Escape' && isFullscreen) {
-				toggleFullscreen();
+			if (event.key === 'ArrowLeft' && projectData.previousProject !== null) {
+				prevProject();
+			}
+			if (event.key === 'ArrowRight' && projectData.nextProject !== null) {
+				nextProject();
 			}
 		});
+		return () => {
+			document.removeEventListener('keydown', () => {});
+		};
 	});
 </script>
 

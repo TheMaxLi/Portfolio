@@ -275,14 +275,7 @@
 									<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Role</h4>
 									<p>{projectData.role}</p>
 								</div>
-								<div>
-									<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Timeline</h4>
-									<p>{projectData.timeline}</p>
-								</div>
-								<div>
-									<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Resources</h4>
-									<p>Source: {projectData.source}</p>
-								</div>
+
 								<div>
 									<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
 									<div class="flex space-x-4">

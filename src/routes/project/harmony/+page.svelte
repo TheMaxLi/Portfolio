@@ -309,7 +309,7 @@
 										AI Integration
 									</h4>
 									<div class="mt-2 flex flex-wrap gap-2">
-										{#each projectData.technologies.filter( (tech) => ['Claude', 'Langchain'].includes(tech) ) as tech}
+										{#each projectData.technologies.filter( (tech) => ['Anthropic API', 'Langchain'].includes(tech) ) as tech}
 											<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white"
 												>{tech}</span
 											>

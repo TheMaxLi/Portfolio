@@ -142,7 +142,7 @@
 							</ul>
 						</div>
 						<div class="mt-6 flex justify-center">
-							<img src="/Circles/MapView.png" alt="Map View" class="w-7/12 shadow-lg" />
+							<img src="/Circles/Map.png" alt="Map View" class="w-7/12 shadow-lg" />
 						</div>
 					</div>
 					<div
@@ -199,7 +199,7 @@
 						</div>
 						<div class="mt-6 flex justify-center">
 							<img
-								src="/Circles/Notifications.png"
+								src="/Circles/Activities.png"
 								alt="Notification System"
 								class="w-7/12 shadow-lg"
 							/>

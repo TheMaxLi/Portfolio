@@ -60,6 +60,14 @@
 				</p>
 			</div>
 		</div>
+		<div class="flex flex-col text-[#CFD1CF]">
+			<span>Contact me at:</span>
+			<a
+				class="text-orange-400 underline"
+				href="https://www.linkedin.com/in/max-shuyu-li-7066832b3/">LinkedIn</a
+			>
+			<a class="text-orange-400 underline" href="https://github.com/TheMaxLi">Github</a>
+		</div>
 		<Inspiration />
 	</div>
 </main>

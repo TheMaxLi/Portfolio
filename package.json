@@ -30,6 +30,7 @@
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.15",
 		"clsx": "^2.1.1",
+		"openssl": "^2.0.0",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^2.6.0"
 	}

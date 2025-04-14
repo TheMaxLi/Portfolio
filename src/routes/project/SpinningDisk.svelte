@@ -6,7 +6,7 @@
 
 {#if !isFullscreen}
 	<div
-		class="flex items-center justify-center p-6 max-md:hidden md:w-1/3"
+		class="flex items-center justify-center p-6 max-lg:hidden lg:w-1/3"
 		transition:slide={{ axis: 'x' }}
 	>
 		<div class="relative h-56 w-56 md:h-full md:w-full">

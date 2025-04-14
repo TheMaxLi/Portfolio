@@ -1,11 +1,18 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import SpinningDisk from './SpinningDisk.svelte';
-
+	import type { ProjectData } from '$lib/utils/ProjectDataType';
+	import type { Snippet } from 'svelte';
 	let {
 		children,
 		isFullscreen = $bindable<boolean>(),
-		isPlaying = $bindable<boolean>()
+		isPlaying = $bindable<boolean>(),
+		projectData
+	}: {
+		children: Snippet;
+		isFullscreen: boolean;
+		isPlaying: boolean;
+		projectData: ProjectData;
 	} = $props();
 
 	function togglePlay() {
@@ -13,13 +20,17 @@
 	}
 
 	function prevProject() {
-		// Logic for previous project
-		console.log('Previous project');
+		if (projectData.previousProject === null) {
+			return;
+		}
+		goto(projectData.previousProject);
 	}
 
 	function nextProject() {
-		// Logic for next project
-		console.log('Next project');
+		if (projectData.nextProject === null) {
+			return;
+		}
+		goto(projectData.nextProject);
 	}
 
 	function toggleFullscreen() {
@@ -29,6 +40,20 @@
 	function exitProject() {
 		goto('/');
 	}
+
+	$effect(() => {
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape' && isFullscreen) {
+				toggleFullscreen();
+			}
+			if (event.key === 'Escape' && isFullscreen) {
+				toggleFullscreen();
+			}
+			if (event.key === 'Escape' && isFullscreen) {
+				toggleFullscreen();
+			}
+		});
+	});
 </script>
 
 <div class="mx-auto flex h-screen w-full flex-col overflow-hidden rounded-lg text-white shadow-lg">
@@ -58,8 +83,9 @@
 		<div class="h-6 w-6 p-1"></div>
 		<div class="flex items-center space-x-3">
 			<button
-				class="text-zinc-400 hover:text-white"
+				class="text-zinc-400 {projectData.previousProject === null ? '' : 'hover:text-white'}"
 				onclick={prevProject}
+				disabled={projectData.previousProject === null}
 				aria-label="Previous Project Button"
 			>
 				<svg class="h-6 w-6" viewBox="0 0 24 24">
@@ -81,9 +107,10 @@
 			</button>
 
 			<button
-				class="text-zinc-400 hover:text-white"
+				class="text-zinc-400 {projectData.nextProject === null ? '' : 'hover:text-white'}"
 				onclick={nextProject}
 				aria-label="Next Project Button"
+				disabled={projectData.nextProject === null}
 			>
 				<svg class="h-6 w-6" viewBox="0 0 24 24">
 					<path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" fill="currentColor"></path>

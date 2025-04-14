@@ -13,7 +13,7 @@
 		{
 			title: 'Circles',
 			desc: 'A social media platform for close friends to create groups, share photo albums, and collaborate in real-time. Built with vanilla HTML, Typescript, and Express.js.',
-			src: '/CirclesLight.webp',
+			src: '/Circles/CirclesLight.webp',
 			reverse: true,
 			link: 'https://idsp-2-circles.fly.dev/',
 			alt: 'Screenshots of Circles app'

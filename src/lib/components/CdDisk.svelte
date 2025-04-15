@@ -28,7 +28,7 @@
 			</CardItem>
 		</div>
 		<div
-			class="absolute left-[16%] top-[32%] w-[150px] sm:w-[250px] md:w-[300px] lg:top-[31%] lg:w-[348px]"
+			class="absolute left-[16%] top-[32%] w-[150px] sm:w-[250px] md:w-[300px] lg:top-[30%] lg:w-[348px]"
 		>
 			<CardItem {isMouseEntered} translateZ="120">
 				<div class="absolute drop-shadow-tight sm:text-[150%] md:text-[180%] lg:text-[34px]">
@@ -44,15 +44,19 @@
 						href="#Circles"
 						name="Circle"
 					/>
-					<ProjectLink className="px-1" title="More to come..." href="#Mina-Bite" />
 
-					<!-- <ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />
+					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />
 					<ProjectLink
-						href="None"
+						href="#Rhythm-Shu"
 						className="pr-2 sm:pr-3"
-						title="&nbsp;&nbsp;[3] Rhythm </br>
-					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game"
-					/> -->
+						title="&nbsp;&nbsp;[3] Green Basil"
+					/>
+					<ProjectLink
+						href="#Rhythm-Shu"
+						className="pr-2 sm:pr-3"
+						title="&nbsp;&nbsp;&nbsp;&nbsp;[4] Rhythm</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shu"
+					/>
 				</div>
 			</CardItem>
 		</div>

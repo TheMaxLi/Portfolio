@@ -18,6 +18,12 @@
 			case '1':
 				handleAnchorClick(e, '#Circles');
 				break;
+			case '2':
+				handleAnchorClick(e, '#MinaBites');
+				break;
+			case '3':
+				handleAnchorClick(e, '#GreenBasil');
+				break;
 		}
 	}
 </script>

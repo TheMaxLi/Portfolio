@@ -45,9 +45,9 @@
 						name="Circle"
 					/>
 
-					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bite" />
+					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#Mina-Bites" />
 					<ProjectLink
-						href="#Rhythm-Shu"
+						href="#Green-Basil"
 						className="pr-2 sm:pr-3"
 						title="&nbsp;&nbsp;[3] Green Basil"
 					/>

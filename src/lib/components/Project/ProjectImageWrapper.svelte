@@ -14,12 +14,12 @@
 	onmouseenter={() => (isMouseEntered = true)}
 	onmouseleave={() => (isMouseEntered = false)}
 	onclick={handleNavigate}
-	class="relative flex flex-col border border-black/[0.2] p-4 dark:border-white/[0.2]"
+	class="relative flex flex-col border border-white/[0.2] p-4"
 >
-	<PlusIcon class="absolute -left-3 -top-3 h-6 w-6 text-black dark:text-white" />
-	<PlusIcon class="absolute -bottom-3 -left-3 h-6 w-6 text-black dark:text-white" />
-	<PlusIcon class="absolute -right-3 -top-3 h-6 w-6 text-black dark:text-white" />
-	<PlusIcon class="absolute -bottom-3 -right-3 h-6 w-6 text-black dark:text-white" />
+	<PlusIcon class="absolute -left-3 -top-3 h-6 w-6 text-white" />
+	<PlusIcon class="absolute -bottom-3 -left-3 h-6 w-6 text-white" />
+	<PlusIcon class="absolute -right-3 -top-3 h-6 w-6 text-white" />
+	<PlusIcon class="absolute -bottom-3 -right-3 h-6 w-6 text-white" />
 	<div class={isMouseEntered ? 'fill-animation' : 'unfill-animation'}>
 		{@render children()}
 	</div>

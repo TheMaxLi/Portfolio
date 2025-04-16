@@ -17,7 +17,7 @@
 			'SQLite',
 			'Cloudinary',
 			'Google Maps API',
-			'WebSockets',
+			'Socket.io',
 			'Multer'
 		],
 		frameworks: ['HTML/JavaScript'],
@@ -88,37 +88,36 @@
 							Social Media-Enabled Photo Organizer
 						</h2>
 						<p>
-							Circles is a photo sharing and organization platform that bridges the gap between
-							organized cloud storage and social media. It is envisioned as Google Drive but with
-							social features — allowing friends to create groups, share albums, and interact with
-							each other's content in a more personal and organized way than traditional photo
-							sharing platforms.
+							Circles is a photo sharing and organization platform for close friends. It is
+							envisioned as Google Drive but with social features — allowing friends to create
+							groups (circles), share albums, and interact with each other's content in a more
+							personal and organized way than traditional photo organziation platforms.
 						</p>
 					</div>
 				</div>
 
-				<!-- <div
+				<div
 					class="flex items-center space-x-40 {isFullscreen ? 'px-[280px]' : '-[1090px] w-full '} "
 				>
 					<div class="space-y-5">
 						<h2 class="font-YoungSerif text-3xl text-white">Development Approach</h2>
 						<p>
-							When building Circles, I focused on implementing features where content organization
-							and social interaction merged. The application needed to handle complex relationship
-							structures between users, groups ("circles"), albums, and individual photos, while
-							maintaining an intuitive user experience that wouldn't overwhelm users with options.
+							For photo storage, I had no previous experience with image handling, so I researched
+							various options. After comparing solutions, I chose Cloudinary with Multer as it
+							offered a straightforward integration path compared to other options.
 						</p>
 						<p>
-							For the tech stack, My team and I chose Express.js for its flexibility and Prisma with
-							SQLite for a lightweight yet powerful database with an ORM that is simple to use while
-							being able to write SQL queries for complex queries like getting nested comments. The
-							frontend used vanilla HTML and JavaScript as it felt like a fun challenge due to the
-							current web development landscape being dominated by frameworks. We wanted to see how
-							far we could push the limits of a simple HTML/JS/CSS stack while still providing a
-							modern user experience.
+							The location feature involved some fun team discussions on implementation approaches.
+							We ultimately decided on a hybrid solution that extracts coordinates from photo
+							metadata when available and falls back to Google Location API for manual user input.
+						</p>
+						<p>
+							I implemented the real-time notification system using WebSockets despite having no
+							prior experience with the technology, relying heavily on documentation and tutorials
+							to build the client-server communication for likes, comments, and invitations.
 						</p>
 					</div>
-				</div> -->
+				</div>
 				<div class="flex flex-col items-center">
 					<div
 						class="flex items-center justify-between max-md:flex-col max-md:space-x-0 max-md:pr-0"
@@ -238,16 +237,7 @@
 						me with invaluable teamwork skills that will serve as a foundation formy future
 						development projects.
 					</p>
-					<p>If I had more time to work on Circles, I would add these features:</p>
-					<ul class="mt-3 list-disc space-y-2 pl-5">
-						<li>AI-powered photo tagging and categorization</li>
-						<li>
-							More advanced permissions systems for sharing specific photos rather than entire
-							albums
-						</li>
-						<li>Integration with existing social platforms for easier friend discovery</li>
-						<li>A mobile app version using React Native to complement the web application</li>
-					</ul>
+
 					<p>
 						Working on Circles taught me a lot about designing systems with complex social
 						relationships and handling real-time data synchronization. It was especially rewarding
@@ -359,14 +349,14 @@
 										Real-time Features
 									</h4>
 									<div class="mt-2 flex flex-wrap gap-2">
-										{#each projectData.technologies.filter( (tech) => ['WebSockets'].includes(tech) ) as tech}
+										{#each projectData.technologies.filter( (tech) => ['Socket.io'].includes(tech) ) as tech}
 											<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white"
 												>{tech}</span
 											>
 										{/each}
 									</div>
 									<p class="mt-4">
-										WebSockets power the real-time notification system, enabling instant updates for
+										Socket.io power the real-time notification system, enabling instant updates for
 										likes, comments, friend requests, and circle invitations without requiring page
 										refreshes.
 									</p>

@@ -44,9 +44,10 @@
 	$effect(() => {
 		document.addEventListener('keydown', (event: KeyboardEvent) => {
 			if (event.key === 'Escape') {
-				toggleFullscreen();
+				exitProject();
 			}
 			if (event.key === ' ') {
+				event.preventDefault();
 				isPlaying = !isPlaying;
 			}
 			if (event.key === 'ArrowLeft' && projectData.previousProject !== null) {

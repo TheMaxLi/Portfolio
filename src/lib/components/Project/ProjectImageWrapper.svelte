@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
 	import PlusIcon from './PlusIcon.svelte';
 	let { children, src } = $props();
 
@@ -11,8 +12,14 @@
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <button
-	onmouseenter={() => (isMouseEntered = true)}
-	onmouseleave={() => (isMouseEntered = false)}
+	onmouseenter={() => {
+		showTooltip('Click to read more');
+		isMouseEntered = true;
+	}}
+	onmouseleave={() => {
+		hideTooltip();
+		isMouseEntered = false;
+	}}
 	onclick={handleNavigate}
 	class="relative flex flex-col border border-white/[0.2] p-4"
 >

@@ -23,21 +23,31 @@
 		{
 			title: 'Mina Bites',
 			desc: 'A restaurant discovery and planning app inspired by my love for exploring new dining experiences. Built with Svelte 5, SvelteKit, and the FourSquare API, it allows users to discover, recommend, and log restaurants. Features include group recommendations, restaurant logging, and user favorites. Designed in Figma and hosted on Vercel.',
-			src: '/MinaBites/MinaBites.png', // Replace with actual image path
+			src: '/MinaBites/MinaBites.webp',
 			reverse: false,
-			chips: ['Full stack', 'Figma', 'Solo'],
+			chips: ['Full stack', 'Design', 'Solo'],
 			id: 'MinaBites'
-			// link: 'https://mina-bite.com', // Replace with actual link
+			// link: 'https://mina-bite.com',
 			// alt: 'Screenshot of Mina-Bite app'
 		},
 		{
 			title: 'Green Basil',
-			desc: 'Work in progress',
+			desc: 'Under Construction!',
 			src: '/GreenBasil/GreenBasil.png',
 			reverse: true,
 			chips: ['Architect lead', 'Team Project'],
 			id: 'GreenBasil'
-			// link: 'https://mina-bite.com', // Replace with actual link
+			// link: 'https://mina-bite.com',
+			// alt: 'Screenshot of Mina-Bite app'
+		},
+		{
+			title: 'Rhythm Shu',
+			desc: 'Under Construction!',
+			src: '/RhythmShu/RhythmShu.png',
+			reverse: false,
+			chips: ['Full stack', 'Solo'],
+			id: 'RhythmShu'
+			// link: 'https://mina-bite.com',
 			// alt: 'Screenshot of Mina-Bite app'
 		}
 	];

@@ -53,6 +53,8 @@
 					<button
 						class="text-orange-400 underline"
 						onclick={(e) => handleAnchorClick(e, '#inspiration')}
+						onmouseenter={() => showTooltip('Not implemented yet')}
+						onmouseleave={hideTooltip}
 					>
 						inspiration
 					</button>
@@ -68,6 +70,6 @@
 			>
 			<a class="text-orange-400 underline" href="https://github.com/TheMaxLi">Github</a>
 		</div>
-		<Inspiration />
+		<!-- <Inspiration /> -->
 	</div>
 </main>

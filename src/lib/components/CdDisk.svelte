@@ -45,17 +45,24 @@
 						name="Circle"
 					/>
 
-					<ProjectLink className="px-1" title="[2] Mina Bites </br>" href="#MinaBites" />
+					<ProjectLink
+						className="px-1"
+						title="[2] Mina Bites </br>"
+						href="#MinaBites"
+						name="Mina Bites"
+					/>
 					<ProjectLink
 						href="#GreenBasil"
 						className="pr-2 sm:pr-3"
 						title="&nbsp;&nbsp;[3] Green Basil"
+						name="Green Basil"
 					/>
 					<ProjectLink
-						href="#Rhythm-Shu"
+						href="#RhythmShu"
 						className="pr-2 sm:pr-3"
 						title="&nbsp;&nbsp;&nbsp;&nbsp;[4] Rhythm</br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shu"
+						name="Rhythm Shu"
 					/>
 				</div>
 			</CardItem>

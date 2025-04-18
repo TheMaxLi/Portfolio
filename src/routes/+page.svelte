@@ -24,6 +24,9 @@
 			case '3':
 				handleAnchorClick(e, '#GreenBasil');
 				break;
+			case '4':
+				handleAnchorClick(e, '#RhythmShu');
+				break;
 		}
 	}
 </script>
@@ -54,7 +57,7 @@
 	P.S. Try hovering your mouse over the disk!
 </p>
 <p class=" text-md flex w-full justify-center pb-[50px] text-white text-opacity-40 sm:hidden">
-	P.S. Try clicking the disk!
+	P.S. Try tapping the disk!
 </p>
 
 <ProjectSection />

@@ -7,12 +7,14 @@
 		children,
 		isFullscreen = $bindable<boolean>(),
 		isPlaying = $bindable<boolean>(),
-		projectData
+		projectData,
+		activeView = $bindable<string>()
 	}: {
 		children: Snippet;
 		isFullscreen: boolean;
 		isPlaying: boolean;
 		projectData: ProjectData;
+		activeView: string;
 	} = $props();
 
 	function togglePlay() {
@@ -83,8 +85,49 @@
 
 	<div class="flex flex-col overflow-hidden md:flex-row">
 		<SpinningDisk bind:isFullscreen bind:isPlaying />
+		<div class={`flex h-full flex-col bg-zinc-900 p-5 ${isFullscreen ? ' w-full' : 'lg:w-[99%] '}`}>
+			<div class="mb-5 flex w-full justify-between border-b border-zinc-700">
+				<div class="w-full">
+					<div class="mb-4">
+						<h1
+							class="font-YoungSerif text-4xl [text-shadow:_0px_0px_10px_rgb(255_255_255_/_0.60)]"
+						>
+							{projectData.title}
+						</h1>
+					</div>
 
-		{@render children()}
+					<div class="mb-5 flex flex-wrap gap-3 text-sm text-zinc-300">
+						<span>Timeline: {projectData.timeline}</span>
+					</div>
+
+					<div class="flex space-x-2 pb-5">
+						<button
+							class="rounded-full {activeView === 'lyrics'
+								? 'bg-zinc-700 text-white'
+								: 'text-zinc-400 hover:bg-zinc-700'} px-4 py-2 text-sm"
+							onclick={() => (activeView = 'lyrics')}>Description</button
+						>
+						<button
+							class="rounded-full px-4 py-2 text-sm {activeView === 'wiki'
+								? 'bg-zinc-700 text-white'
+								: 'text-zinc-400 hover:bg-zinc-700'}"
+							onclick={() => (activeView = 'wiki')}>Tech Stack</button
+						>
+					</div>
+				</div>
+				<div class="relative h-40 w-40 lg:hidden">
+					<div
+						class="absolute flex items-start justify-center rounded-full
+						{isPlaying ? 'animate-spin-slow' : ''}"
+					>
+						<!-- <div class=" overflow-hidden rounded-full shadow-lg">
+							<img alt="App Icon" src="/MinaBites.webp" class="pointer-events-none" />
+						</div> -->
+					</div>
+				</div>
+			</div>
+			{@render children()}
+		</div>
 	</div>
 	<div class="flex items-center justify-between border-t border-zinc-700 p-3">
 		<div class="h-6 w-6 p-1"></div>

@@ -3,6 +3,7 @@
 	import ToolTip from '$lib/components/ToolTip.svelte';
 	import { onNavigate } from '$app/navigation';
 	import '../app.css';
+	import Footer from '$lib/components/Footer.svelte';
 	let { children } = $props();
 
 	onNavigate((navigation) => {

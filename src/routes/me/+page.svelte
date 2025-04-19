@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import Footer from '$lib/components/Footer.svelte';
 	import handleAnchorClick from '$lib/utils/handleAnchorClick';
 	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
 	import Inspiration from './Inspiration.svelte';
@@ -62,14 +63,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex flex-col text-[#CFD1CF]">
-			<span>Contact me at:</span>
-			<a
-				class="text-orange-400 underline"
-				href="https://www.linkedin.com/in/max-shuyu-li-7066832b3/">LinkedIn</a
-			>
-			<a class="text-orange-400 underline" href="https://github.com/TheMaxLi">Github</a>
-		</div>
 		<!-- <Inspiration /> -->
 	</div>
 </main>
+<Footer />

@@ -22,13 +22,13 @@
 		},
 		{
 			title: 'Mina Bites',
-			desc: 'A restaurant discovery and planning app inspired by my love for exploring new dining experiences. Built with Svelte 5, SvelteKit, and the FourSquare API, it allows users to discover, recommend, and log restaurants. Features include group recommendations, restaurant logging, and user favorites. Designed in Figma and hosted on Vercel.',
+			desc: 'A restaurant discovery and planning app inspired by my love for exploring new dining experiences. Features include restaurant search, group creation and collaborated recommendations.',
 			src: '/MinaBites/MinaBites.webp',
 			reverse: false,
 			chips: ['Full stack', 'Design', 'Solo'],
-			id: 'MinaBites'
+			id: 'MinaBites',
 			// link: 'https://mina-bite.com',
-			// alt: 'Screenshot of Mina-Bite app'
+			alt: 'Screenshot of Mina-Bites app'
 		},
 		{
 			title: 'Green Basil',
@@ -53,7 +53,7 @@
 	];
 </script>
 
-<div class="mx-[15px] flex flex-col max-sm:gap-[200px] max-sm:pt-[50px] sm:mx-[50px] lg:mx-[100px]">
+<div class="mx-[15px] flex flex-col max-sm:gap-[100px] max-sm:pt-[50px] sm:mx-[50px] lg:mx-[100px]">
 	{#each PROJECTS as project, i}
 		<Project {...{ ...project }} />
 	{/each}

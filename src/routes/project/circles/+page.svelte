@@ -24,10 +24,6 @@
 		nextProject: null,
 		previousProject: '/project/harmony'
 	};
-
-	function toggleView(view: 'lyrics' | 'wiki') {
-		activeView = view;
-	}
 </script>
 
 <MusicPlayerWrapper bind:isPlaying bind:isFullscreen {projectData}>
@@ -46,21 +42,17 @@
 
 				<div class="flex space-x-2 pb-5">
 					<button
-						class="rounded-full px-4 py-2 text-sm {activeView === 'lyrics'
+						class="rounded-full {activeView === 'lyrics'
 							? 'bg-zinc-700 text-white'
-							: 'text-zinc-400 hover:bg-zinc-700'}"
-						onclick={() => toggleView('lyrics')}
+							: 'text-zinc-400 hover:bg-zinc-700'} px-4 py-2 text-sm"
+						onclick={() => (activeView = 'lyrics')}>Description</button
 					>
-						歌词
-					</button>
 					<button
 						class="rounded-full px-4 py-2 text-sm {activeView === 'wiki'
 							? 'bg-zinc-700 text-white'
 							: 'text-zinc-400 hover:bg-zinc-700'}"
-						onclick={() => toggleView('wiki')}
+						onclick={() => (activeView = 'wiki')}>Tech Stack</button
 					>
-						百科
-					</button>
 				</div>
 			</div>
 			<div class="relative h-40 w-40 lg:hidden">
@@ -75,7 +67,6 @@
 			</div>
 		</div>
 
-		<!-- Lyrics view (original content) -->
 		{#if activeView === 'lyrics'}
 			<div
 				class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 text-lg text-zinc-300 max-sm:overflow-scroll"
@@ -165,6 +156,7 @@
 							</ul>
 						</div>
 						<div class="mt-6 flex justify-center">
+							<!-- svelte-ignore a11y_img_redundant_alt -->
 							<img
 								src="/Circles/Upload.png"
 								alt="Photo upload interface"
@@ -205,23 +197,6 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- <div
-					class="space-y-4 {isFullscreen
-						? 'px-[280px]'
-						: '-[1090px] w-full '} flex flex-col justify-center text-start"
-				>
-					<h4 class="font-YoungSerif text-3xl text-white">Social Relationship Management</h4>
-					<p>
-						The social features of Circles required complex relationship modeling in the database:
-					</p>
-					<ul class="mt-3 list-disc space-y-2 pl-5">
-						<li>Friend request system with pending/accepted states and real-time updates</li>
-						<li>Circle (group) creation with owner/member permissions and invitation system</li>
-						<li>Album access control based on circle membership and sharing settings</li>
-						<li>User activity feeds showing relevant updates from their social connections</li>
-					</ul>
-				</div> -->
 				<div
 					class="{isFullscreen
 						? 'px-[280px]'
@@ -248,7 +223,6 @@
 				</div>
 			</div>
 		{:else}
-			<!-- Wiki view (tech stack and project details) -->
 			<div
 				class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
 			>

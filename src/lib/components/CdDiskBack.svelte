@@ -25,19 +25,7 @@
 				alt="cd case back"
 			/>
 		</CardItem>
-		<div
-			class="absolute left-[33%] top-[32%] w-[150px] sm:w-[250px] md:w-[300px] lg:top-[16%] lg:w-[624px]"
-		>
-			<CardItem {isMouseEntered} translateZ="100">
-				<div class="h-[181px] w-[375px]">
-					<div
-						class="origin-top-left rotate-[-3.17deg] font-YoungSerif text-[40px] font-normal text-[#CFD1CF] [text-shadow:_0px_0px_10px_rgb(255_255_255_/_1.00)]"
-					>
-						<!-- HELP ME -->
-					</div>
-				</div>
-			</CardItem>
-		</div>
+
 		<div class="absolute left-[19%] top-[38%] w-[150px] sm:w-[250px] md:w-[300px] lg:w-[624px]">
 			<CardItem {isMouseEntered} translateZ="120">
 				<div

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CdDisk from '$lib/components/CdDisk.svelte';
 	import CdDiskBack from '$lib/components/CdDiskBack.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import handleAnchorClick from '$lib/utils/handleAnchorClick';
 	import { isFlippedState } from '$lib/utils/isFlipped.svelte';
 	import { hideTooltip, showTooltip } from '$lib/utils/tooltip.svelte';
@@ -61,6 +62,7 @@
 </p>
 
 <ProjectSection />
+<Footer />
 
 <style>
 	.flip-container {

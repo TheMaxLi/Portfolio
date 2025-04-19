@@ -37,13 +37,13 @@
 						class="rounded-full {activeView === 'lyrics'
 							? 'bg-zinc-700 text-white'
 							: 'text-zinc-400 hover:bg-zinc-700'} px-4 py-2 text-sm"
-						onclick={() => (activeView = 'lyrics')}>歌词</button
+						onclick={() => (activeView = 'lyrics')}>Description</button
 					>
 					<button
 						class="rounded-full px-4 py-2 text-sm {activeView === 'wiki'
 							? 'bg-zinc-700 text-white'
 							: 'text-zinc-400 hover:bg-zinc-700'}"
-						onclick={() => (activeView = 'wiki')}>百科</button
+						onclick={() => (activeView = 'wiki')}>Tech Stack</button
 					>
 				</div>
 			</div>

@@ -1,10 +1,17 @@
 <script lang="ts">
 	import Project from '$lib/components/Project/Project.svelte';
+	import ExitButton from './project/ExitButton.svelte';
 
 	const PROJECTS = [
 		{
 			title: 'Harmony',
-			desc: 'A collaborative caretaking app designed to streamline caregiving tasks like journaling, medication reminders, and appointment tracking. Built with Solid.js, SolidStart, and Claude AI for task automation.',
+			desc: `	A collaborative caretaking app designed to streamline caregiving tasks like journaling, medication
+				reminders, and appointment tracking. Built with 
+				<a target="_blank" class="text-orange-400 underline" href="https://www.solidjs.com/">Solid.js</a>,
+				<a target="_blank" class="text-orange-400 underline" href="https://start.solidjs.com/">SolidStart</a>, 
+				and
+				<a target="_blank" class="text-orange-400 underline" href="https://www.langchain.com/">Langchain</a>
+				for task automation.`,
 			src: '/Harmony/Harmony.webp',
 			reverse: false,
 			link: 'https://solid-app.fly.dev/',
@@ -13,7 +20,12 @@
 		},
 		{
 			title: 'Circles',
-			desc: 'A social media platform for close friends to create groups, share photo albums, and collaborate in real-time. Built with vanilla HTML, Typescript, and Express.js.',
+			desc: `A social media platform for close friends to create groups, share photo albums,
+			 	and collaborate in real-time. Built with 				
+				<a target="_blank" class="text-orange-400 underline" href="https://devdocs.io/html/">vanilla HTML</a>,
+				<a target="_blank" class="text-orange-400 underline" href="https://www.typescriptlang.org/docs/">Typescript</a>,
+				and 
+				<a target="_blank" class="text-orange-400 underline" href="https://expressjs.com/">Express.js</a>,.`,
 			src: '/Circles/CirclesLight.webp',
 			reverse: true,
 			link: 'https://idsp-2-circles.fly.dev/',
@@ -22,12 +34,17 @@
 		},
 		{
 			title: 'Mina Bites',
-			desc: 'A restaurant discovery and planning app inspired by my love for exploring new dining experiences. Features include restaurant search, group creation and collaborated recommendations.',
+			desc: `A restaurant discovery and planning app inspired by my love for exploring
+			 	new dining experiences. Built with 
+				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/">Svelte</a>,
+				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/docs/kit/introduction">SvelteKit</a>,
+				and
+				<a target="_blank" class="text-orange-400 underline" href="https://location.foursquare.com/developer/">FourSqaure API</a>.`,
 			src: '/MinaBites/MinaBites.webp',
 			reverse: false,
 			chips: ['Full stack', 'Design', 'Solo'],
 			id: 'MinaBites',
-			// link: 'https://mina-bite.com',
+			link: 'https://mina-bites-kh7k.vercel.app/',
 			alt: 'Screenshot of Mina-Bites app'
 		},
 		{

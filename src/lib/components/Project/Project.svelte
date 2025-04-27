@@ -4,7 +4,7 @@
 
 	let {
 		title = 'not available',
-		desc = 'not available',
+		desc,
 		src = '',
 		reverse = false,
 		alt = '',
@@ -48,7 +48,7 @@
 				{/each}
 			</div>
 		</div>
-		<p class="text-lg">{desc}</p>
+		<p class="text-lg">{@html desc}</p>
 		<div>
 			<button
 				onclick={(e) => handleNavigate(e)}

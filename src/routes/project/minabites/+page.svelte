@@ -21,11 +21,11 @@
 <MusicPlayerWrapper bind:isPlaying bind:isFullscreen {projectData} bind:activeView>
 	{#if activeView === 'lyrics'}
 		<div
-			class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 text-lg text-zinc-300 max-sm:overflow-scroll"
+			class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 text-lg text-zinc-300 max-sm:overflow-scroll {isFullscreen
+				? 'px-[280px]'
+				: '-[1090px] w-full '} "
 		>
-			<div
-				class="flex items-center space-x-40 {isFullscreen ? 'px-[280px]' : '-[1090px] w-full '} "
-			>
+			<div class="flex items-center space-x-40">
 				<div class="space-y-5">
 					<h2 class="font-YoungSerif text-3xl text-white">
 						Restaurant Discovery & Social Planning App
@@ -39,9 +39,9 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center space-y-20">
 				<div class="flex items-center justify-between max-md:flex-col max-md:space-x-0 max-md:pr-0">
-					<div class="max-w-[700px] space-y-4">
+					<div class="space-y-4">
 						<h4 class="font-YoungSerif text-3xl text-white">Discover & Recommend</h4>
 						<p>
 							The restaurant discovery feature uses the FourSquare API to help users find nearby
@@ -50,13 +50,13 @@
 						</p>
 					</div>
 					<div class="mt-6 flex justify-center">
-						<img src="/PlaceHolderImage.png" alt="Discovery View" class="w-7/12 shadow-lg" />
+						<img src="/MinaBites/Search.png" alt="Discovery View" class="w-3/4 shadow-lg" />
 					</div>
 				</div>
 				<div
 					class="flex flex-row-reverse items-center justify-between max-md:flex-col max-md:space-x-0 max-md:pr-0"
 				>
-					<div class="max-w-[700px] space-y-4">
+					<div class="space-y-4">
 						<h4 class="font-YoungSerif text-3xl text-white">Social Recommendations</h4>
 						<p>
 							The group recommendations feature allows users to share and vote on restaurant options
@@ -65,20 +65,23 @@
 						</p>
 					</div>
 					<div class="mt-6 flex justify-center">
-						<img src="/PlaceHolderImage.png" alt="Group recommendations" class="w-7/12 shadow-lg" />
+						<img
+							src="/MinaBites/MinaBites.webp"
+							alt="Group recommendations"
+							class="w-3/4 shadow-lg"
+						/>
 					</div>
 				</div>
 				<div class="flex items-center justify-between max-md:flex-col max-md:space-x-0 max-md:pr-0">
-					<div class="max-w-[700px] space-y-4">
-						<h4 class="font-YoungSerif text-3xl text-white">Restaurant Logging</h4>
+					<div class="space-y-4">
+						<h4 class="font-YoungSerif text-3xl text-white">Favoriting Restaurant</h4>
 						<p>
-							Users can log visits to restaurants, rate their experiences, and add personal notes.
-							This feature helps users track their dining history and build a personalized food
-							journal to remember their favorite dishes and experiences.
+							Users can favorite restaurants and save them to recommend later. This feature helps
+							users track their dining wishlist.
 						</p>
 					</div>
 					<div class="mt-6 flex justify-center">
-						<img src="/PlaceHolderImage.png" alt="Restaurant Logging" class="w-7/12 shadow-lg" />
+						<img src="/MinaBites/Favorites.png" alt="Restaurant Logging" class="w-3/4 shadow-lg" />
 					</div>
 				</div>
 			</div>

@@ -187,12 +187,12 @@
 							<div>
 								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
 								<div class="flex space-x-4">
-									<a href="https://idsp-2-circles.fly.dev/" class="text-blue-400 hover:underline"
+									<a href="https://idsp-2-circles.fly.dev/" class="text-orange-400 underline"
 										>Live</a
 									>
 									<a
 										href="https://github.com/angus-ng/IDSP-2-Circles"
-										class="text-blue-400 hover:underline">GitHub Repository</a
+										class="text-orange-400 underline">GitHub Repository</a
 									>
 								</div>
 							</div>

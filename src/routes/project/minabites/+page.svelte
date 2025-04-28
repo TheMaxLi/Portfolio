@@ -95,31 +95,31 @@
 					? 'px-[280px]'
 					: '-[1090px] w-full '}"
 			>
-				<!-- <div class="w-full space-y-6">
-						 <div class="rounded-lg bg-zinc-800 p-6">
-							<h3 class="mb-4 font-YoungSerif text-2xl text-white">Project Details</h3>
-							<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-								<div>
-									<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Role</h4>
-									<p>{projectData.role}</p>
-								</div>
+				<div class="w-full space-y-6">
+					<div class="rounded-lg bg-zinc-800 p-6">
+						<h3 class="mb-4 font-YoungSerif text-2xl text-white">Project Details</h3>
+						<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+							<div>
+								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Role</h4>
+								<p>{projectData.role}</p>
+							</div>
 
-								<div>
-									<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
-									<div class="flex space-x-4">
-										<a
-											href="https://mina-bites-kh7k.vercel.app/"
-											class="text-blue-400 hover:underline">Live</a
-										>
-										<a
-											href="https://github.com/TheMaxLi/Mina-Bites"
-											class="text-blue-400 hover:underline">GitHub Repository</a
-										>
-									</div>
+							<div>
+								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
+								<div class="flex space-x-4">
+									<a
+										href="https://mina-bites-kh7k.vercel.app/"
+										class="text-orange-400 underline">Live</a
+									>
+									<a
+										href="https://github.com/TheMaxLi/Mina-Bites"
+										class="text-orange-400 underline">GitHub Repository</a
+									>
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
+				</div>
 
 				<div class="w-full space-y-6">
 					<div class="rounded-lg bg-zinc-800 p-6">

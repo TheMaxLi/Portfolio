@@ -202,11 +202,11 @@
 							<div>
 								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
 								<div class="flex space-x-4">
-									<a href="https://solid-app.fly.dev/" class="text-blue-400 hover:underline">Live</a
+									<a href="https://solid-app.fly.dev/" class="text-orange-400 underline">Live</a
 									>
 									<a
 										href="https://github.com/Vakiyama/harmony"
-										class="text-blue-400 hover:underline">GitHub Repository</a
+										class="text-orange-400 underline">GitHub Repository</a
 									>
 								</div>
 							</div>

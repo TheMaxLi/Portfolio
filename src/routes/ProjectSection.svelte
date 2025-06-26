@@ -35,7 +35,7 @@
 		{
 			title: 'Mina Bites',
 			desc: `A restaurant discovery and planning app inspired by my love for exploring
-			 	new dining experiences. Built with 
+				new dining experiences. Built with 
 				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/">Svelte</a>,
 				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/docs/kit/introduction">SvelteKit</a>,
 				and
@@ -49,21 +49,14 @@
 		},
 		{
 			title: 'Green Basil',
-			desc: 'Under Construction!',
+			desc: `A website redesign and development where I led the architecture and mentored new developers, focusing on system design and code quality. Built with 
+				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/">Svelte</a>
+				and
+				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/docs/kit/introduction">SvelteKit</a>.`,
 			src: '/GreenBasil/GreenBasil.png',
 			reverse: true,
 			chips: ['Architect lead', 'Team Project'],
 			id: 'GreenBasil'
-			// link: 'https://mina-bite.com',
-			// alt: 'Screenshot of Mina-Bite app'
-		},
-		{
-			title: 'Rhythm Shu',
-			desc: 'Under Construction!',
-			src: '/RhythmShu/RhythmShu.png',
-			reverse: false,
-			chips: ['Full stack', 'Solo'],
-			id: 'RhythmShu'
 			// link: 'https://mina-bite.com',
 			// alt: 'Screenshot of Mina-Bite app'
 		}

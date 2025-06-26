@@ -1,4 +1,4 @@
-<footer class="border-t px-4 text-white sm:px-8 md:px-8 lg:px-24 bg-zinc-800">
+<footer class="border-t bg-black px-4 text-white sm:px-8 md:px-8 lg:px-24">
 	<div class="flex flex-col items-center justify-between gap-8 py-8 md:flex-row md:gap-0 md:py-12">
 		<div class="flex w-full flex-col gap-6 md:w-auto md:gap-12">
 			<h1 class="text-center text-4xl font-medium md:text-start">Get in touch!</h1>

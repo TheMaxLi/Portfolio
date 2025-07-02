@@ -20,7 +20,6 @@
 			'Socket.io',
 			'Multer'
 		],
-		frameworks: ['HTML/JavaScript'],
 		nextProject: null,
 		previousProject: '/project/harmony'
 	};
@@ -168,10 +167,10 @@
 		</div>
 	{:else}
 		<div
-			class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
+			class="flex h-full w-full flex-col items-center overflow-y-auto pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
 		>
 			<div
-				class="flex flex-col items-center space-y-12 {isFullscreen
+				class="flex flex-col items-center space-y-8 {isFullscreen
 					? 'px-[280px]'
 					: '-[1090px] w-full '}"
 			>
@@ -210,11 +209,9 @@
 									Framework & Frontend
 								</h4>
 								<div class="mt-2 flex flex-wrap gap-2">
-									{#each projectData.frameworks as framework}
-										<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white"
-											>{framework}</span
-										>
-									{/each}
+									<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white">
+										HTML/JavaScript
+									</span>
 									<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white">CSS</span>
 								</div>
 								<p class="mt-4">

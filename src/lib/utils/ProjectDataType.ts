@@ -4,7 +4,6 @@ export interface ProjectData {
 	timeline: string;
 	source: string;
 	technologies: readonly string[];
-	frameworks: readonly string[];
 	nextProject: string | null;
 	previousProject: string | null;
 }

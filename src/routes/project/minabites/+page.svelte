@@ -9,10 +9,9 @@
 	const projectData: ProjectData = {
 		title: 'Mina Bites',
 		role: 'Fullstack Developer',
-		timeline: 'Oct → Dec 2024',
+		timeline: 'Oct 2024 → Ongoing',
 		source: 'Restaurant App',
 		technologies: ['Svelte 5', 'SvelteKit', 'FourSquare API', 'Drizzle ORM', 'Vercel', 'Figma'],
-		frameworks: ['Svelte/TypeScript'],
 		nextProject: null,
 		previousProject: '/project/circles'
 	};
@@ -88,10 +87,10 @@
 		</div>
 	{:else}
 		<div
-			class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
+			class="flex h-full w-full flex-col items-center overflow-y-auto pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
 		>
 			<div
-				class="flex flex-col items-center space-y-12 {isFullscreen
+				class="flex flex-col items-center space-y-8 {isFullscreen
 					? 'px-[280px]'
 					: '-[1090px] w-full '}"
 			>
@@ -107,13 +106,11 @@
 							<div>
 								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
 								<div class="flex space-x-4">
-									<a
-										href="https://mina-bites-kh7k.vercel.app/"
-										class="text-orange-400 underline">Live</a
+									<a href="https://mina-bites-kh7k.vercel.app/" class="text-orange-400 underline"
+										>Live</a
 									>
-									<a
-										href="https://github.com/TheMaxLi/Mina-Bites"
-										class="text-orange-400 underline">GitHub Repository</a
+									<a href="https://github.com/TheMaxLi/Mina-Bites" class="text-orange-400 underline"
+										>GitHub Repository</a
 									>
 								</div>
 							</div>
@@ -131,13 +128,7 @@
 									Framework & Frontend
 								</h4>
 								<div class="mt-2 flex flex-wrap gap-2">
-									{#each projectData.frameworks as framework}
-										<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white"
-											>{framework}</span
-										>
-									{/each}
-									<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white">Svelte 5</span
-									>
+									<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white">Svelte</span>
 									<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white"
 										>SvelteKit</span
 									>

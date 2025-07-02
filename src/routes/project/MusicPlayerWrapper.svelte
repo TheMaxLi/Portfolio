@@ -66,9 +66,7 @@
 </script>
 
 <div class="mx-auto flex h-screen w-full flex-col overflow-hidden rounded-lg text-white shadow-lg">
-	<div class="flex items-center justify-between border-b border-zinc-700 p-2">
-		<div></div>
-
+	<div class="flex items-center justify-end border-b border-zinc-700 p-2">
 		<button
 			onclick={exitProject}
 			class="rounded-full p-1 text-zinc-400 hover:bg-zinc-700 hover:text-white"

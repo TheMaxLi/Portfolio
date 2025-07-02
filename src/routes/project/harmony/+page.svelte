@@ -12,7 +12,6 @@
 		timeline: 'Aug → Dec 2024',
 		source: '我喜欢的音乐',
 		technologies: ['Drizzle', 'Docker', 'Socket.io', 'SQLite', 'Claude', 'Langchain', 'Tailwind'],
-		frameworks: ['Solid.js'],
 		nextProject: '/project/circles',
 		previousProject: null
 	};
@@ -182,12 +181,11 @@
 			</div>
 		</div>
 	{:else}
-		<!-- Wiki view (tech stack and project details) -->
 		<div
-			class="flex h-full w-full flex-col items-center space-y-16 overflow-y-auto pb-10 pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
+			class="flex h-full w-full flex-col items-center overflow-y-auto pt-1 text-lg text-zinc-300 max-sm:overflow-scroll"
 		>
 			<div
-				class="flex flex-col items-center space-y-12 {isFullscreen
+				class="flex flex-col items-center space-y-8 {isFullscreen
 					? 'px-[280px]'
 					: '-[1090px] w-full '}"
 			>
@@ -202,11 +200,9 @@
 							<div>
 								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Project Links</h4>
 								<div class="flex space-x-4">
-									<a href="https://solid-app.fly.dev/" class="text-orange-400 underline">Live</a
-									>
-									<a
-										href="https://github.com/Vakiyama/harmony"
-										class="text-orange-400 underline">GitHub Repository</a
+									<a href="https://solid-app.fly.dev/" class="text-orange-400 underline">Live</a>
+									<a href="https://github.com/Vakiyama/harmony" class="text-orange-400 underline"
+										>GitHub Repository</a
 									>
 								</div>
 							</div>
@@ -222,11 +218,9 @@
 							<div>
 								<h4 class="mb-2 text-sm uppercase tracking-wider text-zinc-400">Framework</h4>
 								<div class="mt-2 flex flex-wrap gap-2">
-									{#each projectData.frameworks as framework}
-										<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white"
-											>{framework}</span
-										>
-									{/each}
+									<span class="rounded-full bg-zinc-700 px-3 py-1 text-sm text-white">
+										Solid.js
+									</span>
 								</div>
 								<p class="mt-4">
 									Solid.js was chosen for its reactive primitives and efficient DOM updates,

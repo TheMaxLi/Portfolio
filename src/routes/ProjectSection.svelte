@@ -49,7 +49,11 @@
 		},
 		{
 			title: 'Green Basil',
-			desc: 'Under Construction!',
+			desc: `Redesign and development of the Green Basil website, a thai restaurant in Metro Burnaby. 
+				The project involved creating a new design and implementing it using 
+				<a target="_blank" class="text-orange-400 underline" href="https://svelte.dev/">Svelte</a>,
+				and 
+				<a target="_blank" class="text-orange-400 underline" href="https://tailwindcss.com/">Tailwind CSS</a>.`,
 			src: '/GreenBasil/GreenBasil.png',
 			reverse: true,
 			chips: ['Architect lead', 'Team Project'],
